@@ -28,3 +28,11 @@ var GameLibrary = function(type){
   this.type = type;
   this.games = [];
 };
+
+GameLibrary.prototype.render = function() {
+  $("#game-library-container").append('<h4>'+ this.type +'</h4>');
+  for (var i = 0; i < this.games.length; i++) {
+    $("#game-library-container").append('<p> Title:' + this.games[i].title + '</p>');
+  }
+};
+
