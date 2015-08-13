@@ -9,50 +9,50 @@
   <body>
 
     <h1>Game Library</h1>
+
     <form id="create-game">
       Add Game Title:
       <br>
       <input id="gameinput" class="game-input" type="text" name="gametitle">
-      <br>
-       <br>
+      <br><br>
       Choose Game Type:
       <br>
-        <select name="gametypes" id="gametypes" class="game-input">
-          <option value="" disabled selected>Game Type?</option>
-          <option value="Video Games">Video Games</option>
-          <option value="Board Games">Board Games</option>
-          <option value="Drinking Games">Drinking Games</option>
-        </select>
-        <br>
-        <br>
-        <input type="submit" id="gamesubmit" value="Submit">
+      <select name="gametypes" id="gametypes" class="game-input">
+        <option value="" disabled selected>Game Type?</option>
+        <option value="Video Games">Video Games</option>
+        <option value="Board Games">Board Games</option>
+        <option value="Drinking Games">Drinking Games</option>
+      </select>
+      <br>
+      <br>
+      <input type="submit" id="gamesubmit" value="Submit">
     </form>
-    <div id="new-games">
 
-    </div>
+    <div id="new-games"></div>
+
     <br>
 
     <form id="show-library">
      Show Game Library:
       <br>
-        <select name="librarytypes" id="librarytypes" class="library-input">
-          <option value="" disabled selected>Choose a Library</option>
-          <option value="videoGames">Video Games</option>
-          <option value="boardGames">Board Games</option>
-          <option value="drinkingGames">Drinking Games</option>
-        </select>
-        <br>
-        <br>
-        <input type="submit" id="librarysubmit" value="Get All The Games!">
+      <select name="librarytypes" id="librarytypes" class="library-input">
+        <option value="" disabled selected>Choose a Library</option>
+        <option value="videoGames">Video Games</option>
+        <option value="boardGames">Board Games</option>
+        <option value="drinkingGames">Drinking Games</option>
+      </select>
+      <br>
+      <br>
+      <input type="submit" id="librarysubmit" value="Get All The Games!">
     </form>
-    <div id="all-games">
 
-    </div>
+    <div id="game-library-container"></div>
 
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/dom.js"></script>
 
   </body>
 </html>
